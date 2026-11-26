@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atos e mobilizações · Abatiro</title>
+<meta name="description" content="Agenda de atos, manifestações, encontros e mutirões em Curitiba, com data, horário e endereço sempre à vista.">
+<meta name="theme-color" content="#590909">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Abatiro">
+<meta property="og:title" content="Atos e mobilizações · Abatiro">
+<meta property="og:description" content="Agenda de atos, manifestações, encontros e mutirões em Curitiba, com data, horário e endereço sempre à vista.">
+<meta property="og:image" content="assets/img/og-abatiro.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300..900;1,300..700&family=Lilita+One&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/data.js" defer></script>
+<script src="assets/js/fotos.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="atos">
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="index.html" aria-label="Abatiro, página inicial">Abatiro</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span class="bars"><span></span></span>Menu</button>
+    <nav class="main-nav" id="main-nav" aria-label="Principal"><ul><li><a href="index.html">Início</a></li><li><a href="manifesto.html">Manifesto</a></li><li><a href="coletivos.html">Coletivos</a></li><li><a href="atos.html" aria-current="page">Atos</a></li></ul></nav>
+  </div>
+</header>
+<main id="conteudo" tabindex="-1">
+
+<section class="page-hero sec-laranja on-orange" aria-labelledby="atos-title">
+  <div class="deco" style="right:-4%;top:-6%;width:22%;height:90%" aria-hidden="true"><svg viewBox="0 0 200 320"><path d="M120 0 C 40 100, 70 260, 200 300 L 200 0 Z" fill="#590909"/><path d="M200 40 C 120 120, 130 230, 200 260 Z" fill="#E87324"/></svg></div>
+  <div class="deco float" style="left:52%;top:14%;width:36px;height:40px" aria-hidden="true"><svg viewBox="0 0 36 40"><ellipse cx="18" cy="20" rx="16" ry="18" fill="#ECDEC4"/></svg></div>
+  <div class="deco hide-sm" style="left:44%;bottom:-4px;width:90px;height:70px" aria-hidden="true"><svg viewBox="0 0 90 70"><path d="M20 4 C -6 30, 20 70, 70 60" fill="none" stroke="#590909" stroke-width="12" stroke-linecap="round"/></svg></div>
+  <div class="container" style="position:relative">
+    <div class="hero-split">
+      <div>
+        <span class="eyebrow">Agenda coletiva</span>
+        <h1 id="atos-title" class="display display-xl">Atos <span class="sub">e mobilizações</span></h1>
+        <p class="lead">Atos, manifestações, encontros e mutirões que acontecem em Curitiba. <strong>Data, horário e endereço</strong> ficam sempre à vista.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><span class="n" id="stat-proximos">5</span><span class="t">atos à vista</span></div>
+        <div class="stat"><span class="n" id="stat-realizados">3</span><span class="t">atos já realizados</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-bege sec-pad" aria-label="Agenda de atos">
+  <div class="container">
+    <article class="feature-event reveal" id="destaque-ato" aria-label="Próximo ato"></article>
+    <form class="search" id="form-busca-atos" role="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 5C6.5 5 2.7 9.3 1.5 12c1.2 2.7 5 7 10.5 7s9.3-4.3 10.5-7C21.3 9.3 17.5 5 12 5Zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z"/><circle cx="12" cy="12" r="2" fill="currentColor"/></svg>
+      <label for="busca-atos" class="sr-only">Buscar ato, causa ou local</label>
+      <input id="busca-atos" type="search" placeholder="Buscar ato, causa ou local" autocomplete="off">
+      <button type="submit">Buscar</button>
+    </form>
+    <div class="tabs" id="tabs-atos" role="tablist" aria-label="Período">
+      <button type="button" class="tab" role="tab" data-aba="proximos" aria-controls="lista-atos">Próximos</button>
+      <button type="button" class="tab" role="tab" data-aba="mes" aria-controls="lista-atos">Este mês</button>
+      <button type="button" class="tab" role="tab" data-aba="realizados" aria-controls="lista-atos">Realizados</button>
+      <button type="button" class="tab" role="tab" data-aba="todos" aria-controls="lista-atos">Todos</button>
+    </div>
+    <div class="chips" id="chips-atos" role="group" aria-label="Filtrar por causa"></div>
+    <p class="result-count" id="count-atos" aria-live="polite">Atos</p>
+    <div class="event-list" id="lista-atos" role="tabpanel"></div>
+  </div>
+</section>
+</main>
+<div class="footer-pattern" aria-hidden="true"></div>
+<footer class="site-footer">
+  <div class="container inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="footer-logo" href="index.html">Abatiro</a>
+        <p class="footer-tag">Do Caos ao Coletivo</p>
+        <p class="footer-desc">Movimento apartidário que aproxima jovens de coletivos, atos e ações do cotidiano em Curitiba e região.</p>
+      </div>
+      <nav class="footer-col" aria-labelledby="f-nav"><h2 id="f-nav">Navegar</h2><ul>
+        <li><a href="index.html">Início</a></li><li><a href="manifesto.html">Manifesto</a></li>
+        <li><a href="coletivos.html">Coletivos</a></li><li><a href="atos.html">Atos</a></li></ul></nav>
+      <nav class="footer-col" aria-labelledby="f-part"><h2 id="f-part">Participe</h2><ul>
+        <li><a href="coletivos.html">Encontre um coletivo</a></li><li><a href="atos.html">Veja os próximos atos</a></li></ul></nav>
+      <nav class="footer-col" aria-labelledby="f-inst"><h2 id="f-inst">Institucional</h2><ul>
+        <li><a href="index.html#sobre">Sobre o projeto</a></li><li><a href="index.html#quem-somos">Quem somos</a></li></ul></nav>
+    </div>
+    <div class="footer-bottom"><span>© <span id="ano">2026</span> Abatiro · Projeto de Design</span><span>Apartidário · coletivo · cotidiano</span></div>
+  </div>
+</footer>
+</body>
+</html>
