@@ -137,7 +137,7 @@ window.ABATIRO_DATA = {
       endereco: "Bom Retiro, Curitiba",
       coletivo: "horta-comum",
       foto: "ato-mutirao-de-plantio",
-      demo: true
+      demo: false
     },
     {
       id: "roda-de-conversa-no-territorio",
@@ -150,7 +150,7 @@ window.ABATIRO_DATA = {
       endereco: "Boqueirão, Curitiba",
       coletivo: "roda-do-bairro",
       foto: "ato-roda-de-conversa",
-      demo: true
+      demo: false
     },
     {
       id: "oficina-de-lambe-lambe",
@@ -163,7 +163,7 @@ window.ABATIRO_DATA = {
       endereco: "São Francisco, Curitiba",
       coletivo: "tambor-e-tinta",
       foto: "ato-oficina-lambe-lambe",
-      demo: true
+      demo: false
     },
     {
       id: "pedalada-por-ruas-seguras",
@@ -176,7 +176,7 @@ window.ABATIRO_DATA = {
       endereco: "Água Verde, Curitiba",
       coletivo: "ocupa-ciclo",
       foto: "ato-pedalada",
-      demo: true
+      demo: false
     },
     {
       id: "ato-pela-moradia-digna",
@@ -189,7 +189,7 @@ window.ABATIRO_DATA = {
       endereco: "Sítio Cercado, Curitiba",
       coletivo: "teto-e-chao",
       foto: "ato-moradia-digna",
-      demo: true
+      demo: false
     },
     {
       id: "aula-publica-de-rua",
@@ -202,7 +202,7 @@ window.ABATIRO_DATA = {
       endereco: "Rebouças, Curitiba",
       coletivo: "cursinho-de-esquina",
       foto: "ato-aula-publica",
-      demo: true
+      demo: false
     },
     {
       id: "tarde-de-memoria-e-musica",
@@ -215,7 +215,7 @@ window.ABATIRO_DATA = {
       endereco: "Cajuru, Curitiba",
       coletivo: "voz-da-quebrada",
       foto: "ato-memoria-e-musica",
-      demo: true
+      demo: false
     },
     {
       id: "caminhada-lilas",
@@ -228,7 +228,7 @@ window.ABATIRO_DATA = {
       endereco: "Portão, Curitiba",
       coletivo: "rede-lilas",
       foto: "ato-caminhada-lilas",
-      demo: true
+      demo: false
     }
   ]
 };
