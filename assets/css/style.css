@@ -117,10 +117,8 @@ ul, ol { margin: 0; }
   border-bottom: 1px solid rgba(89, 9, 9, .08);
 }
 .site-header .container { display: flex; align-items: center; justify-content: space-between; min-height: var(--header-h); }
-.logo {
-  font-family: var(--display); font-size: 46px; line-height: 1; color: var(--vinho);
-  text-decoration: none; letter-spacing: .01em;
-}
+.logo { display: inline-flex; align-items: center; text-decoration: none; }
+.logo img { height: 42px !important; width: auto !important; display: block; }
 .main-nav ul { list-style: none; display: flex; gap: clamp(20px, 3.4vw, 48px); padding: 0; }
 .main-nav a {
   position: relative; text-decoration: none;
@@ -361,7 +359,8 @@ ul, ol { margin: 0; }
 .site-footer { background: var(--vinho); color: var(--bege); }
 .site-footer .inner { padding-top: clamp(56px, 7vw, 90px); padding-bottom: 30px; }
 .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 32px; }
-.footer-logo { font-family: var(--display); font-size: 68px; line-height: 1; color: var(--bege); text-decoration: none; }
+.footer-logo { display: inline-block; text-decoration: none; }
+.footer-logo img { height: 62px !important; width: auto !important; display: block; }
 .footer-tag { font-size: 18px; margin: 8px 0 18px; opacity: .9; }
 .footer-desc { font-size: 14px; max-width: 300px; opacity: .85; }
 .footer-col h2 { font-size: 11.5px; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; color: var(--laranja); margin-bottom: 18px; }
@@ -595,7 +594,7 @@ ul, ol { margin: 0; }
 
 @media (max-width: 900px) {
   :root { --header-h: 70px; }
-  .logo { font-size: 38px; }
+  .logo img { height: 32px !important; }
   .menu-toggle { display: inline-flex; }
   .main-nav {
     position: absolute; left: 0; right: 0; top: 100%;
@@ -644,7 +643,7 @@ ul, ol { margin: 0; }
   .event .actions { padding: 0 16px 16px; }
   .event .actions .btn { width: 100%; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px 20px; }
-  .footer-logo { font-size: 56px; }
+  .footer-logo img { height: 50px !important; }
   .site-footer .footer-bottom { flex-direction: column; gap: 6px; }
   .feature-event .big-date .d { font-size: 96px; }
   .feature-event h2 { font-size: 38px; }
