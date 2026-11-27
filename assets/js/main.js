@@ -333,7 +333,7 @@
     var blobColor = c.cor === "laranja" ? "#590909" : "#E87324";
 
     root.innerHTML =
-      '<section class="detail-hero ' + heroBg + '"><div class="container">' +
+      '<section class="detail-hero ' + heroBg + '"><div class="pat ' + (c.cor === "laranja" ? "pat-vinho" : "pat-laranja") + ' pat-fade" style="left:-60px;bottom:-60px;width:420px;height:380px;opacity:' + (c.cor === "laranja" ? ".16" : ".35") + '" aria-hidden="true"></div><div class="container">' +
       '<nav class="breadcrumb" aria-label="Você está em"><ol><li><a href="coletivos.html">Coletivos</a></li><li aria-current="page">' + esc(c.causa) + "</li></ol></nav>" +
       '<div class="detail-grid"><div><div class="tags"><span class="tag ' + (/vinho|verde|vermelho/.test(c.cor) ? "tag-laranja" : "tag-vinho") + '">' + esc(c.causa) + "</span>" + (c.demo ? '<span class="tag tag-plain">Demonstração</span>' : "") + "</div>" +
       "<h1>" + esc(c.nome) + "</h1>" +
@@ -397,7 +397,7 @@
     var d = parseDate(a), col = coletivoById(a.coletivo), p = isPast(a);
     var gmaps = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(a.local + " " + a.endereco);
     root.innerHTML =
-      '<section class="detail-hero sec-laranja"><div class="container">' +
+      '<section class="detail-hero sec-laranja"><div class="pat pat-vinho pat-fade" style="left:-60px;bottom:-60px;width:440px;height:400px;opacity:.15" aria-hidden="true"></div><div class="container">' +
       '<div class="deco" style="right:-4%;bottom:-6%;width:34%;height:44%"><svg viewBox="0 0 300 200" aria-hidden="true"><path d="M20 200 C 60 60, 200 20, 300 60" fill="none" stroke="#590909" stroke-width="40" stroke-linecap="round"/></svg></div>' +
       '<nav class="breadcrumb" aria-label="Você está em"><ol><li><a href="atos.html">Atos</a></li><li aria-current="page">' + esc(a.causa) + "</li></ol></nav>" +
       '<div class="detail-grid"><div><div class="tags"><span class="tag tag-vinho">' + faltam(a) + '</span><span class="tag tag-plain">' + esc(a.causa) + "</span>" + (a.demo ? '<span class="tag tag-plain">Demonstração</span>' : "") + "</div>" +
