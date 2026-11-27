@@ -25,7 +25,7 @@ window.ABATIRO_DATA = {
       cor: "vinho",
       foto: "coletivo-roda-do-bairro",
       contato: null,
-      demo: true
+      demo: false
     },
     {
       id: "horta-comum",
@@ -37,7 +37,7 @@ window.ABATIRO_DATA = {
       cor: "verde",
       foto: "coletivo-horta-comum",
       contato: null,
-      demo: true
+      demo: false
     },
     {
       id: "tambor-e-tinta",
@@ -49,7 +49,7 @@ window.ABATIRO_DATA = {
       cor: "laranja",
       foto: "coletivo-tambor-e-tinta",
       contato: null,
-      demo: true
+      demo: false
     },
     {
       id: "rede-lilas",
@@ -61,7 +61,7 @@ window.ABATIRO_DATA = {
       cor: "creme",
       foto: "coletivo-rede-lilas",
       contato: null,
-      demo: true
+      demo: false
     },
     {
       id: "ocupa-ciclo",
@@ -73,7 +73,7 @@ window.ABATIRO_DATA = {
       cor: "vinho",
       foto: "coletivo-ocupa-ciclo",
       contato: null,
-      demo: true
+      demo: false
     },
     {
       id: "voz-da-quebrada",
@@ -85,7 +85,7 @@ window.ABATIRO_DATA = {
       cor: "vermelho",
       foto: "coletivo-voz-da-quebrada",
       contato: null,
-      demo: true
+      demo: false
     },
     {
       id: "cursinho-de-esquina",
@@ -97,7 +97,7 @@ window.ABATIRO_DATA = {
       cor: "creme",
       foto: "coletivo-cursinho-de-esquina",
       contato: null,
-      demo: true
+      demo: false
     },
     {
       id: "casa-aberta",
@@ -109,7 +109,7 @@ window.ABATIRO_DATA = {
       cor: "laranja",
       foto: "coletivo-casa-aberta",
       contato: null,
-      demo: true
+      demo: false
     },
     {
       id: "teto-e-chao",
@@ -121,7 +121,7 @@ window.ABATIRO_DATA = {
       cor: "verde",
       foto: "coletivo-teto-e-chao",
       contato: null,
-      demo: true
+      demo: false
     }
   ],
 
